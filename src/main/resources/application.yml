@@ -1,0 +1,13 @@
+## 配置注册中心的url，register-with-eureka: false 该应用不注册到注册中心
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:8761/eureka/
+    register-with-eureka: false
+
+## 应用名称
+spring:
+  application:
+    name: eureka
+server:
+  port: 8761
